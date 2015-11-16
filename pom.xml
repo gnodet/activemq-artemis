@@ -540,6 +540,7 @@
             <module>artemis-ra</module>
             <module>artemis-rest</module>
             <module>artemis-service-extensions</module>
+            <module>artemis-osgi</module>
             <module>artemis-maven-plugin</module>
             <module>integration/activemq-spring-integration</module>
             <module>integration/activemq-aerogear-integration</module>
@@ -896,6 +897,11 @@
                <groupId>org.apache.activemq</groupId>
                <artifactId>artemis-maven-plugin</artifactId>
                <version>${project.version}</version>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.felix</groupId>
+               <artifactId>maven-bundle-plugin</artifactId>
+               <version>3.0.1</version>
             </plugin>
          </plugins>
       </pluginManagement>
